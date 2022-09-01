@@ -1,0 +1,255 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+div.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  z-index: 100; }
+  header h1 {
+    font-variant: small-caps;
+    font-size: 3em;
+    letter-spacing: 3px;
+    font-family: 'Pacifico', cursive;
+    margin: 0; }
+  header .nav-button {
+    position: relative;
+    width: 45px;
+    height: 35px;
+    cursor: pointer;
+    z-index: 102;
+    margin-right: 50px; }
+    header .nav-button b {
+      position: absolute;
+      width: 45px;
+      height: 3px;
+      z-index: 101;
+      background-color: white; }
+      header .nav-button b:nth-child(1) {
+        top: 0; }
+      header .nav-button b:nth-child(2) {
+        top: 50%; }
+      header .nav-button b:nth-child(3) {
+        top: 100%; }
+
+.nav-overlay {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.92;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .nav-overlay :only-child {
+    visibility: inherit;
+    position: absolute;
+    top: 35%;
+    width: 450px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    transition: none; }
+  .nav-overlay.active {
+    visibility: visible;
+    background-color: #333; }
+  .nav-overlay a {
+    visibility: inherit;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 20px;
+    transition: all 0.3s ease-in-out;
+    border: white 2px solid;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    line-height: 50px; }
+    .nav-overlay a:hover {
+      color: #ccc;
+      transform: scale3d(1.1, 1.05, 0.95);
+      transition: inherit; }
+
+.main-button {
+  padding: 12px 30px;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  cursor: pointer;
+  color: #8a442e;
+  background-color: rgba(199, 199, 199, 0.85);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.25);
+  font-variant: small-caps;
+  text-transform: uppercase; }
+  .main-button:hover {
+    color: #ccc;
+    background-color: #b37145;
+    transform: translateY(-5px); }
+  .main-button:active {
+    color: #aaa;
+    background-color: #222222;
+    transform: translateY(0); }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1; }
+  main .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: calc(100vh - 200px);
+    width: 100%;
+    background: #eee;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1; }
+    main .main-content .background {
+      background: url(/resorces/luann-hunt-tv8e9oQx-H4-unsplash.jpg) no-repeat;
+      background-size: 100% auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; }
+    main .main-content .main-content-text {
+      width: 100%;
+      backdrop-filter: blur(10px);
+      padding: 15px 0; }
+      main .main-content .main-content-text :only-child {
+        font-size: 3.5em;
+        line-height: 1.5;
+        font-family: 'Courier New', Courier, monospace;
+        font-variant: small-caps; }
+    main .main-content h1 {
+      font-size: 3em;
+      font-weight: bold;
+      text-align: center;
+      margin: 0;
+      line-height: 1.5; }
+  main .google-maps {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    z-index: -1; }
+  main .delivery-banner {
+    width: 100%;
+    height: 400px;
+    background: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 50px;
+    z-index: 1; }
+    main .delivery-banner h1 {
+      font-size: 2em;
+      font-weight: bold;
+      text-align: center;
+      margin: 0; }
+  main .input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 450px;
+    position: relative;
+    z-index: 1; }
+    main .input-container .img-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background: url(/resorces/fabrizio-pullara-vHRFraV4U00-unsplash.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      filter: sepia(75%) contrast(115%) brightness(90%) saturate(110%); }
+    main .input-container .input-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      height: 100px;
+      background: #eee;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 1; }
+      main .input-container .input-wrapper h1 {
+        font-style: italic;
+        font-size: 1.75em;
+        width: 75%;
+        text-align: center; }
+      main .input-container .input-wrapper #email {
+        width: 400px;
+        height: 25px;
+        border: 2px solid #333;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        line-height: 1.5;
+        cursor: pointer;
+        background-color: rgba(199, 199, 199, 0.493);
+        border-radius: 10px; }
+        main .input-container .input-wrapper #email:hover {
+          color: #0a0a0a;
+          border: 3px solid black; }
+        main .input-container .input-wrapper #email:focus {
+          color: #050505;
+          border: 3px solid black; }
+      main .input-container .input-wrapper button {
+        margin-top: 20px; }
+
+footer {
+  background: rgba(51, 51, 51, 0.699);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  p-position: absolute; }
+
+/*# sourceMappingURL=style.css.map */

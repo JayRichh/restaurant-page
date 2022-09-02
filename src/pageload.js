@@ -2,11 +2,14 @@ export function pageLoad() {
   // DOM manipulation starts here //
   const header = document.createElement("header");
   const main = document.createElement("main");
+
   const footer = document.createElement("footer");
 
   // Header content
-  const h1 = document.createElement("h1");
-  h1.textContent = "Blaze Pizza";
+  const h1 = document.createElement("a");
+  h1.setAttribute("href", "#");
+  h1.textContent = "Blaze Pizza.";
+
   // Menu button
   const navButton = document.createElement("button");
   navButton.classList.add("hamburger");
@@ -52,7 +55,7 @@ export function pageLoad() {
 
   // Main content
   const div1 = document.createElement("div");
-  div1.classList.add("main-content");
+  div1.classList.add("hero-content");
 
   // Main content Div 1
   const background = document.createElement("div");

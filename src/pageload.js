@@ -8,6 +8,7 @@ export function pageLoad() {
   // Header content
   const h1 = document.createElement("a");
   h1.setAttribute("href", "#");
+  h1.classList.add("home");
   h1.textContent = "Blaze Pizza.";
 
   // Menu button
@@ -70,6 +71,7 @@ export function pageLoad() {
   const mainMenuButton = document.createElement("a");
   mainMenuButton.setAttribute("href", "#");
   mainMenuButton.classList.add("main-button");
+  mainMenuButton.classList.add("order");
   mainMenuButton.textContent = "Menu";
 
   div1.appendChild(background);
@@ -107,6 +109,7 @@ export function pageLoad() {
   const deliveryBannerButton = document.createElement("a");
   deliveryBannerButton.setAttribute("href", "#");
   deliveryBannerButton.classList.add("main-button");
+  deliveryBannerButton.classList.add("order");
   deliveryBannerButton.textContent = "Order Now";
 
   div3.appendChild(deliveryBannerText);

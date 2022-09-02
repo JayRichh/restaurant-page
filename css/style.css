@@ -1,10 +1,14 @@
+html {
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
 body {
   padding: 0;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  overflow-x: hidden;
-  overflow-y: scroll; }
+  width: 100vw;
+  height: 100vh; }
 
 div.content {
   display: flex;
@@ -13,9 +17,9 @@ div.content {
   align-items: center; }
 
 header {
-  background: #333;
+  background: #464646;
   color: #fff;
-  padding: 20px;
+  padding: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,26 +31,15 @@ header {
     font-size: 3em;
     letter-spacing: 3px;
     font-family: 'Pacifico', cursive;
-    margin: 0; }
-  header .nav-button {
+    padding: 10px; }
+  header .hamburger {
+    /* Nav button  */
     position: relative;
-    width: 45px;
-    height: 35px;
+    width: auto;
+    height: auto;
     cursor: pointer;
     z-index: 102;
-    margin-right: 50px; }
-    header .nav-button b {
-      position: absolute;
-      width: 45px;
-      height: 3px;
-      z-index: 101;
-      background-color: white; }
-      header .nav-button b:nth-child(1) {
-        top: 0; }
-      header .nav-button b:nth-child(2) {
-        top: 50%; }
-      header .nav-button b:nth-child(3) {
-        top: 100%; }
+    margin-right: 2.5rem; }
 
 .nav-overlay {
   visibility: hidden;
@@ -119,6 +112,8 @@ header {
 
 main {
   display: flex;
+  width: 100%;
+  height: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;

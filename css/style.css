@@ -263,7 +263,8 @@ main {
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: -1; }
+      z-index: -1;
+      filter: contrast(0.8) brightness(0.8) saturate(1.2); }
     main .main-content .main-content-text {
       width: 100%;
       backdrop-filter: blur(10px);

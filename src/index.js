@@ -13,34 +13,6 @@ const init = () => {
   const navOverlay = document.querySelector(".nav-overlay");
   const navLinks = document.querySelectorAll(".nav-overlay-content a");
 
-  // Manage page change
-  const menuPage = () => {
-    removeDom(); // Remove DOM elements
-    console.log("Menu page");
-    import("./menu.js").then((module) => {
-      // Import menu.js module and run menuPage function
-      module.menuPage(); // Run menuPage function from menu.js module
-    });
-  };
-  const locationsPage = () => {
-    removeDom();
-    import("./locations.js").then((module) => {
-      module.locationsPage();
-    });
-  };
-  const aboutPage = () => {
-    removeDom();
-    import("./about.js").then((module) => {
-      module.aboutPage();
-    });
-  };
-  const contactPage = () => {
-    removeDom();
-    import("./contact.js").then((module) => {
-      module.contactPage();
-    });
-  };
-
   // Global functions
   const toggleHome = () => {
     removeAllDom();
@@ -58,17 +30,28 @@ const init = () => {
   const managePages = (link) => {
     switch (link) {
       case "MENU.":
-        menuPage();
-        console.log("menu");
+        import("./menu.js").then((module) => {
+          removeDom();
+          module.menuPage();
+        });
         break;
       case "LOCATIONS.":
-        locationsPage();
+        import("./locations.js").then((module) => {
+          removeDom();
+          module.locationsPage();
+        });
         break;
       case "ABOUT.":
-        aboutPage();
+        import("./about.js").then((module) => {
+          removeDom();
+          module.aboutPage();
+        });
         break;
       case "CONTACT.":
-        contactPage();
+        import("./contact.js").then((module) => {
+          removeDom();
+          module.contactPage();
+        });
         break;
       default:
         break;
@@ -76,16 +59,14 @@ const init = () => {
   };
   const getTargetText = (e) => {
     const link = e.target.textContent;
-    managePages(link); 
+    managePages(link);
   };
-
-
 
   // Event listeners
   homeButton.addEventListener("click", toggleHome);
   navButton.addEventListener("click", toggleOverlay);
   orderButtons.forEach((button) => {
-    button.addEventListener("click", menuPage);
+    button.addEventListener("click", getTargetText);
   });
   navLinks.forEach((link) => {
     link.addEventListener("click", toggleOverlay);

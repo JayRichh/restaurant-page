@@ -65,7 +65,8 @@ export function pageLoad() {
   const mainContentText = document.createElement("div");
   mainContentText.classList.add("main-content-text");
   const mainContentTextH1 = document.createElement("h1");
-  mainContentTextH1.textContent = "Traditional wood fired pizza, made to order.";
+  mainContentTextH1.textContent =
+    "Traditional wood fired pizza, made to order.";
   mainContentText.appendChild(mainContentTextH1);
 
   const mainMenuButton = document.createElement("a");
@@ -82,19 +83,22 @@ export function pageLoad() {
   const div2 = document.createElement("div");
   div2.classList.add("google-maps");
 
-  const iframe = document.createElement("iframe");
-  iframe.setAttribute(
-    "src",
-    "https://www.google.com/maps/embed/v1/view?zoom=17&center=24.8357%2C46.6817&key=AIzaSyBuG8B1ZVjxm3tin2ZYMZFdZ0wONikG6l8"
-  );
-  iframe.setAttribute("width", "100%");
-  iframe.setAttribute("height", "100%");
-  iframe.setAttribute("frameborder", "0");
-  iframe.setAttribute("style", "border:0");
-  iframe.setAttribute("allowfullscreen", "");
-  iframe.setAttribute("loading", "lazy");
+  const privateIframe = () => {
+    const iframe = document.createElement("iframe");
+    iframe.setAttribute(
+      "src",
+      "https://www.google.com/maps/embed/v1/view?zoom=17&center=24.8357%2C46.6817&key=AIzaSyBuG8B1ZVjxm3tin2ZYMZFdZ0wONikG6l8"
+    );
+    iframe.setAttribute("width", "100%");
+    iframe.setAttribute("height", "100%");
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("style", "border:0");
+    iframe.setAttribute("allowfullscreen", "");
+    iframe.setAttribute("loading", "lazy");
+    return iframe;
+  };
 
-  div2.appendChild(iframe);
+  div2.appendChild(privateIframe());
 
   // Main content Div 3
   const div3 = document.createElement("div");

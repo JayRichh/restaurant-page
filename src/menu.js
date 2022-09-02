@@ -112,7 +112,7 @@ export function menuPage() {
         const pizzaItem = document.createElement("div");
         pizzaItem.classList.add("menu-item");
         pizzaItem.innerHTML = `
-          <img src="/resources/pizza${id}.jpg" alt="pizza${id}">
+          <img src="/restaurant-page/resources/pizza${id}.jpg" alt="pizza${id}">
           <h3 class="menu-item__name">${pizza.name}</h3>
           <p class="menu-item__description">${pizza.description}</p>
           <p class="menu-item__price">${pizza.price}</p>
@@ -126,7 +126,7 @@ export function menuPage() {
         const saladItem = document.createElement("div");
         saladItem.classList.add("menu-item");
         saladItem.innerHTML = `
-          <img src="/resources/salad${id}.jpg" alt="salad${id}">
+          <img src="/restaurant-page/resources/salad${id}.jpg" alt="salad${id}">
           <h3 class="menu-item__name">${salad.name}</h3>
           <p class="menu-item__description">${salad.description}</p>
           <p class="menu-item__price">${salad.price}</p>
@@ -140,7 +140,7 @@ export function menuPage() {
         const sideItem = document.createElement("div");
         sideItem.classList.add("menu-item");
         sideItem.innerHTML = `
-          <img src="/resources/side${id}.jpg" alt="side${id}">
+          <img src="/restaurant-page/resources/side${id}.jpg" alt="side${id}">
           <h3 class="menu-item__name">${side.name}</h3>
           <p class="menu-item__description">${side.description}</p>
           <p class="menu-item__price">${side.price}</p>

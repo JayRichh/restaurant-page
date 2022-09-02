@@ -370,8 +370,9 @@ main {
       height: 100%;
       min-width: 1200px;
       max-width: 2000px;
-      background: #eee;
+      background: rgb(199, 199, 199);
       gap: 2rem;
+      padding: 4rem 2rem;
     }
 
     .pizza-menu {
@@ -383,6 +384,12 @@ main {
       grid-gap: 20px;
       max-width: 1200px;
       padding: 40px 40px;
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+      }
 
       img {
         width: 300px;
@@ -467,7 +474,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: #eee;
     box-sizing: border-box;
@@ -544,13 +551,153 @@ main {
 
     .about__content {
       height: calc(100vh - 150px);
-      width: 75%;
-      background: #eee;
+      width: 85%;
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      background: rgb(201, 201, 201);
+
+      h1 {
+        font-size: 3em;
+        font-family: 'Courier New', Courier, monospace;
+        font-variant: small-caps;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.5em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        width: 75%;
+        padding: 0 10%;
+      }
+
+      img {
+        width: 500px;
+        height: 600px;
+        object-fit: cover;
+        border-radius: 5px;
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+
+  .contact {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .contact__content {
+      height: calc(100vh - 140px);
+      width: 85%;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+
+      .contact__content__left {
+        height: calc(auto + 100px);
+        width: 60%;
+        background-color: rgba(170, 170, 170, 0.76);
+      }
+
+      .contact__content__right {
+        height: calc(auto + 100px);
+        width: 60%;
+
+        div {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+
+          form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            width: auto;
+            gap: 1rem;
+            background-color: rgba(170, 170, 170, 0.76);
+            padding: 3rem;
+
+            .contact__form__title {
+              font-size: 3em;
+              font-family: 'Courier New', Courier, monospace;
+              text-align: center;
+              padding: 0;
+              margin: 0;
+            }
+
+            label {
+              font-size: 2em;
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+              text-align: center;
+              letter-spacing: 1px;
+              font-variant: small-caps;
+              padding: 0.5rem;
+            }
+
+            input {
+              width: 100%;
+              height: 50px;
+              border: none;
+              border-bottom: 1px solid black;
+              font-size: 1.5em;
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+              text-align: center;
+              letter-spacing: 1px;
+            }
+
+            textarea {
+              width: 100%;
+              height: 200px;
+              border: none;
+              border-bottom: 1px solid black;
+              font-size: 1.5em;
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+              text-align: center;
+              letter-spacing: 1px;
+            }
+
+            input[type='submit'] {
+              width: 100%;
+              height: 50px;
+              border: none;
+              background: black;
+              color: white;
+              font-size: 1.5em;
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+              text-align: center;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              font-variant: small-caps;
+              cursor: pointer;
+            }
+          }
+        }
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: -1;
+          filter: saturate(0.5) brightness(0.5) contrast(1.5);
+        }
+
+
+      }
 
       h1 {
         font-size: 3em;
@@ -565,13 +712,6 @@ main {
         text-align: center;
       }
 
-      img {
-        width: 500px;
-        height: 500px;
-        object-fit: cover;
-        border-radius: 5px;
-        box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.25);
-      }
     }
   }
 

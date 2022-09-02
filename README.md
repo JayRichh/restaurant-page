@@ -11,15 +11,13 @@
 
   * Create all DOM elements via JavaScript
   * Ustilize ES6 modules
-  * Create 
-  * 
-
+  * Create multiple pages with tabbed browsing
 
 ## Scope Creep:
 
   * CSS Animation for toggle navigation button
-  * SASS Scripting to build the CSS for the project
-
+  * SASS Scripting to build the CSS for the project (to tidy)
+  * Jquery, ES6 Template Literals & expressions for some of the DOM
 
 ## Tools:
 
@@ -27,6 +25,7 @@
   * Linux terminal
   * Git and GitHub
   * SASS
+  * JQUERY
   * Webpack
   * NPM
 

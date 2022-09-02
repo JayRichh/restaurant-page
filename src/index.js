@@ -42,6 +42,10 @@ const init = () => {
   };
 
   // Global functions
+  const toggleHome = () => {
+    removeAllDom();
+    init();
+  };
   const toggleOverlay = () => {
     navOverlay.classList.toggle("active");
     navButton.classList.toggle("is-active");
@@ -78,11 +82,7 @@ const init = () => {
 
 
   // Event listeners
-  homeButton.addEventListener("click", () => {
-    removeAllDom();
-    init();
-  });
-
+  homeButton.addEventListener("click", toggleHome);
   navButton.addEventListener("click", toggleOverlay);
   orderButtons.forEach((button) => {
     button.addEventListener("click", menuPage);

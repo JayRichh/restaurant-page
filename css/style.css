@@ -376,6 +376,91 @@ main {
         top: 0;
         left: calc(50% - 57px);
         transform: translateY(-20px); }
+  main .locations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100%;
+    background: #eee;
+    box-sizing: border-box; }
+    main .locations h1 {
+      font-size: 3em;
+      font-family: 'Courier New', Courier, monospace;
+      font-variant: small-caps;
+      text-align: center; }
+    main .locations p {
+      font-size: 1.5em;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-align: center; }
+    main .locations :nth-child(3) {
+      height: 100%; }
+    main .locations .locations-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      max-width: 2200px;
+      background: #eee;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 1;
+      gap: 4rem;
+      padding: 4rem; }
+      main .locations .locations-wrapper .location {
+        width: 100%;
+        height: 100%;
+        background: #b8b7b7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.25); }
+        main .locations .locations-wrapper .location h2 {
+          font-size: 3em;
+          font-family: 'Courier New', Courier, monospace;
+          font-variant: small-caps;
+          text-align: center;
+          letter-spacing: 0.1em; }
+        main .locations .locations-wrapper .location p {
+          font-size: 1.5em;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          text-align: center;
+          letter-spacing: 1px; }
+        main .locations .locations-wrapper .location img {
+          width: 85%;
+          height: 65%;
+          object-fit: cover;
+          border-radius: 5px; }
+  main .about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; }
+    main .about .about__content {
+      height: calc(100vh - 150px);
+      width: 75%;
+      background: #eee;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      main .about .about__content h1 {
+        font-size: 3em;
+        font-family: 'Courier New', Courier, monospace;
+        font-variant: small-caps;
+        text-align: center; }
+      main .about .about__content p {
+        font-size: 1.5em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center; }
+      main .about .about__content img {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 5px;
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.25); }
 
 .google-maps {
   width: 100%;
@@ -466,7 +551,8 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 40px; }
+  height: 40px;
+  position: relative; }
   footer p {
     position: absolute; }
 

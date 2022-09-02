@@ -464,6 +464,121 @@ main {
       }
     }
   }
+
+  .locations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100%;
+    background: #eee;
+    box-sizing: border-box;
+
+    h1 {
+      font-size: 3em;
+      font-family: 'Courier New', Courier, monospace;
+      font-variant: small-caps;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.5em;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-align: center;
+    }
+
+    :nth-child(3) {
+      height: 100%;
+    }
+
+    .locations-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      max-width: 2200px;
+      background: #eee;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 1;
+      gap: 4rem;
+      padding: 4rem;
+
+      .location {
+        width: 100%;
+        height: 100%;
+        background: rgb(184, 183, 183);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.25);
+
+        h2 {
+          font-size: 3em;
+          font-family: 'Courier New', Courier, monospace;
+          font-variant: small-caps;
+          text-align: center;
+          letter-spacing: 0.1em;
+        }
+
+        p {
+          font-size: 1.5em;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          text-align: center;
+          letter-spacing: 1px;
+        }
+
+        img {
+          width: 85%;
+          height: 65%;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .about__content {
+      height: calc(100vh - 150px);
+      width: 75%;
+      background: #eee;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        font-size: 3em;
+        font-family: 'Courier New', Courier, monospace;
+        font-variant: small-caps;
+        text-align: center;
+
+      }
+
+      p {
+        font-size: 1.5em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+      }
+
+      img {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 5px;
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+
 }
 
 .google-maps {
@@ -575,6 +690,7 @@ footer {
   align-items: center;
   width: 100%;
   height: 40px;
+  position: relative;
 
   p {
     position: absolute

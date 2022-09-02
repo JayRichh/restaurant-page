@@ -306,6 +306,7 @@ main {
     justify-content: space-evenly;
     height: calc(100vh - 200px);
     width: 100%;
+    max-height: 800px;
     background: #eee;
     box-sizing: border-box;
     position: relative;
@@ -318,7 +319,6 @@ main {
       top: 0;
       left: 0;
       width: 100%;
-      min-width: 1650px;
       height: 100%;
       z-index: -1;
     }

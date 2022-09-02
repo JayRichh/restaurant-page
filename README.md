@@ -3,7 +3,7 @@
 
 ## Create a restaurant's website using JavaScript
 
-[Check out a live version here](.....linkhere "restaurant")
+[Check out a live version here](https://jayrichh.github.io/restaurant-page/)
 
 ## Overview
 

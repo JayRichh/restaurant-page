@@ -313,13 +313,13 @@ main {
     z-index: 1;
 
     .background {
-      background: url(/restaurant-page/resorces/luann-hunt-tv8e9oQx-H4-unsplash.jpg) no-repeat;
+      background: url(/restaurant-page/resorces/luann-hunt-tv8e9oQx-H4-unsplash.jpg) no-repeat center center fixed;
       background-size: 100% 100%;
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
+      height: auto;
       z-index: -1;
     }
 

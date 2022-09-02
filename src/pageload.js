@@ -61,7 +61,7 @@ export function pageLoad() {
   const mainContentText = document.createElement("div");
   mainContentText.classList.add("main-content-text");
   const mainContentTextH1 = document.createElement("h1");
-  mainContentTextH1.textContent = "Pizza. Beer. Music.";
+  mainContentTextH1.textContent = "Traditional wood fired pizza, made to order.";
   mainContentText.appendChild(mainContentTextH1);
 
   const mainMenuButton = document.createElement("a");

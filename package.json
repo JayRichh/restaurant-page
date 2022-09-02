@@ -21,6 +21,7 @@
     "webpack-cli": "^4.10.0"
   },
   "dependencies": {
+    "hamburgers": "^1.2.1",
     "jquery": "^3.6.1",
     "jsdom": "^20.0.0",
     "node-polyfill-webpack-plugin": "^2.0.1",

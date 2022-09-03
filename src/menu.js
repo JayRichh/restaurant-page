@@ -1,4 +1,4 @@
-export function menuPage() 
+export function menuPage() {
   const menu = {
     pizza: [
       {
@@ -176,7 +176,7 @@ export function menuPage()
   pizzaTitle.textContent = "PIZZAS";
 
   // check if object has been loaded
-  if (menu.pizza.length > 0) {
+  if (menu?.pizza.length > 0) {
     menu.pizzaConstruct();
   }
 
@@ -186,7 +186,7 @@ export function menuPage()
   saladTitle.classList.add("menu-category");
   saladTitle.textContent = "SALADS";
 
-  if (menu.salad.length > 0) {
+  if (menu?.salad.length > 0) {
     menu.saladConstruct();
   }
 
@@ -196,7 +196,7 @@ export function menuPage()
   sideTitle.classList.add("menu-category");
   sideTitle.textContent = "SIDES";
 
-  if (menu.side.length > 0) {
+  if (menu?.side.length > 0) {
     menu.sideConstruct();
   }
 

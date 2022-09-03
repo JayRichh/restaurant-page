@@ -17,7 +17,7 @@ export function contactPage() {
       <br><br>
     </div>
     <div class="contact__content__right">
-      <img src="/resources/contact.jpg" alt="contact" class="contact__img">
+      <img src="/restaurant-page/resources/contact.jpg" alt="contact" class="contact__img">
       <div class="contact__form">
         <form action="https://formspree.io/f/mvoyzolr" method="POST">
           <p class="contact__form__title">Send us a message!</p>

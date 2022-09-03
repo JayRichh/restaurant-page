@@ -23,15 +23,15 @@ export function locationsPage() {
   location1Title.textContent = "New York City";
   location1Text.textContent = 
     "Our main headquarters is located in the heart of New York City. We have been serving the city since 2010.";
-  location1Image.src = "/resources/map.jpg";
+  location1Image.src = "/restaurant-page/resources/map.jpg";
   location2Title.textContent = "Los Angeles";
   location2Text.textContent =
     "Our second location is in Los Angeles. We are located at 123 Main Street, Los Angeles, CA 90001.";
-  location2Image.src = "/resources/map2.jpg";
+  location2Image.src = "/restaurant-page/resources/map2.jpg";
   location3Title.textContent = "Chicago";
   location3Text.textContent =
     "Our third location is in Chicago. We are located at 123 Main Street, Chicago, IL 60001.";
-  location3Image.src = "/resources/map3.jpg";
+  location3Image.src = "/restaurant-page/resources/map3.jpg";
 
   locations.classList.add("locations");
   locationsWrapper.classList.add("locations-wrapper");

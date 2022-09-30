@@ -12,6 +12,7 @@ const init = () => {
   const navButton = document.querySelector(".hamburger");
   const navOverlay = document.querySelector(".nav-overlay");
   const navLinks = document.querySelectorAll(".nav-overlay-content a");
+  const mainMenuButton = document.querySelector(".main-button");
 
   // Global functions
   const toggleHome = () => {

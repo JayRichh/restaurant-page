@@ -73,7 +73,7 @@ export function pageLoad() {
   mainMenuButton.setAttribute("href", "#");
   mainMenuButton.classList.add("main-button");
   mainMenuButton.classList.add("order");
-  mainMenuButton.textContent = "Menu";
+  mainMenuButton.textContent = "MENU.";
 
   div1.appendChild(background);
   div1.appendChild(mainContentText);

@@ -18,6 +18,10 @@
   * CSS Animation for toggle navigation button
   * SASS Scripting to build the CSS for the project (to tidy)
   * Jquery, ES6 Template Literals & expressions for some of the DOM
+  
+## To Do:
+
+  * Optimise images to reduce size and increase loading speed
 
 ## Tools:
 

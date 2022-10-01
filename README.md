@@ -1,9 +1,10 @@
 # Project: Restaurant Page
 
-
 ## Create a restaurant's website using JavaScript
 
 [Check out a live version here](https://jayrichh.github.io/restaurant-page/)
+
+![pizza_github](https://user-images.githubusercontent.com/18374849/193420181-5ab58da4-5af2-49c8-905a-07c5584ee6c5.png)
 
 ## Overview
 
